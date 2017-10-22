@@ -19,7 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.Scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
@@ -54,10 +54,17 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
+    "styleExt": "scss",
     "class": {
       "spec": false
     },
-    "component": {}
-  }
+    "component": {
+      "flat": true,
+      "spec": false,
+      "inlineStyle": true,
+      "inlineTemplate": true,
+      "changeDetection": "OnPush"
+    }
+  },
+  "packageManager": "yarn"
 }

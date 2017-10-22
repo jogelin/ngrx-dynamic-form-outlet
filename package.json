@@ -13,15 +13,22 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^4.2.4",
+    "@angular/cdk": "^2.0.0-beta.12",
     "@angular/common": "^4.2.4",
     "@angular/compiler": "^4.2.4",
     "@angular/core": "^4.2.4",
     "@angular/forms": "^4.2.4",
     "@angular/http": "^4.2.4",
+    "@angular/material": "^2.0.0-beta.12",
     "@angular/platform-browser": "^4.2.4",
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
+    "@ngrx/effects": "^4.1.0",
+    "@ngrx/router-store": "^4.1.0",
+    "@ngrx/store": "^4.1.0",
+    "@ngrx/store-devtools": "^4.0.0",
     "core-js": "^2.4.1",
+    "ng-dynamic-component": "^1.1.0",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
   },
@@ -44,6 +51,6 @@
     "protractor": "~5.1.2",
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
-    "typescript": "~2.3.3"
+    "typescript": "2.5.3"
   }
 }
