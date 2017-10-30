@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import { createFeatureSelector, createSelector, Store } from '@ngrx/store';
-import { StoreService } from '../../store/app-store.service';
-import { AppState } from '../../store/app.reducer';
 import { AddConsultation, AddConsultationSucceed } from './consultation.actions';
-import { Consultation } from '../model/consultation';
+import { Consultation } from '../models/consultation.model';
 import { ConsultationState } from './consultation.reducer';
+import { StoreService } from '../../../store/app-store.service';
+import { AppState } from '../../../store/app.reducer';
 
 @Injectable()
 export class ConsultationStoreService extends StoreService {

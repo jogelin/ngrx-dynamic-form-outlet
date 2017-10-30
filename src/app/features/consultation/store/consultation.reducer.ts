@@ -1,5 +1,5 @@
 import { ConsultationAction, ConsultationActions } from './consultation.actions';
-import { Consultation } from '../model/consultation';
+import { Consultation } from '../models/consultation.model';
 
 export interface ConsultationState {
   consultation: Consultation;

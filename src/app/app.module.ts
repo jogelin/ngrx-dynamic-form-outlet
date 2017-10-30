@@ -4,24 +4,25 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SharedModule } from './shared/shared.module';
 import { AppStoreModule } from './store/app-store.module';
-import { ConsultationModule } from './consultation/consultation.module';
-import { NgRxFormDirective } from './shared/form/ngrx-form.directive';
-import { FormModule } from './shared/form/form.module';
-import { SideNavModule } from './shared/side-nav/side-nav.module';
+import { AppConsultationModule } from './features/consultation/consultation.module';
+import { AppCoreModule } from './core/core.module';
+import { AppDashboardModule } from './features/dashboard/dashboard.module';
+import { AppInscriptionModule } from './features/inscription/inscription.module';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
-    SharedModule,
+    AppRoutingModule,
     AppStoreModule,
-    ConsultationModule,
-    SideNavModule
+    AppCoreModule,
+    AppDashboardModule,
+    AppConsultationModule,
+    AppInscriptionModule
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+}

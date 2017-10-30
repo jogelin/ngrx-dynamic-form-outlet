@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$fednot-app-primary: mat-palette($mat-indigo);
+$fednot-app-accent:  mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$fednot-app-warn:    mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$fednot-app-theme: mat-light-theme($fednot-app-primary, $fednot-app-accent, $fednot-app-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($fednot-app-theme);
+
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Roboto, Arial, sans-serif
+}

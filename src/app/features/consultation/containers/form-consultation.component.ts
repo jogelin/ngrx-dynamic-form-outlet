@@ -1,27 +1,32 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { FormConsultationStudyComponent } from './form-consultation-study.component';
-import { FormConsultationNotaryComponent } from './form-consultation-notary.component';
-import { ConsultationActions } from './store/consultation.actions';
+import { FormConsultationStudyComponent } from '../components/form-consultation-study.component';
+import { FormConsultationNotaryComponent } from '../components/form-consultation-notary.component';
+import { ConsultationActions } from '../store/consultation.actions';
 
 @Component({
   selector: 'app-form-consultation',
   template: `
     <form [formGroup]="form"
-      (ngSubmit)="submit($event)"
-      (success)="onSuccess()"
-      (error)="onError($event)"
-      path="consultation"
-      [action]="actionType"
-      appNgRxForm>
+          (ngSubmit)="submit($event)"
+          (success)="onSuccess()"
+          (error)="onError($event)"
+          path="consultation"
+          [action]="actionType"
+          appNgRxForm>
+      <mat-card>
+        <mat-card-content>
           <ndc-dynamic [ndcDynamicComponent]="component"
-                           [ndcDynamicInputs]="inputs"
-                           [ndcDynamicOutputs]="outputs"></ndc-dynamic>
-      <button type="submit">Submit</button>
+                       [ndcDynamicInputs]="inputs"
+                       [ndcDynamicOutputs]="outputs"></ndc-dynamic>
+        </mat-card-content>
+        <mat-card-actions>
+
+          <button type="submit">Submit</button>
+        </mat-card-actions>
+      </mat-card>
     </form>
-    <div class="alert alert-success" *ngIf="success">Success!</div>
-    <div class="alert alert-danger" *ngIf="error">{{error}}</div>
- `
+  `
 })
 export class FormConsultationComponent implements OnInit {
 

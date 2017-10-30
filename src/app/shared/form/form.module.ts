@@ -14,5 +14,5 @@ import { FormStoreModule } from './store/form-store.module';
     NgRxFormDirective
   ]
 })
-export class FormModule {
+export class AppFormModule {
 }

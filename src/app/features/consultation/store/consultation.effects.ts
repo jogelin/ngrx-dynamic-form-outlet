@@ -9,17 +9,15 @@ import { Injectable } from '@angular/core';
 import { Actions, Effect } from '@ngrx/effects';
 import { AddConsultation, AddConsultationSucceed, ConsultationActions } from './consultation.actions';
 import { ConsultationStoreService } from './consultation-store.service';
-import { FormActions, FormSubmitSuccess } from '../../shared/form/store/form.actions';
-import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/from';
 
 @Injectable()
 export class ConsultationEffects {
-  constructor(private storeService: ConsultationStoreService, private actions$: Actions) {
-  }
-
   @Effect()
   addConsultationAction$ = this.actions$
     .ofType<AddConsultation>(ConsultationActions.ADD_CONSULTATION)
     .map(({payload}) => new AddConsultationSucceed(payload));
+
+  constructor(private storeService: ConsultationStoreService, private actions$: Actions) {
+  }
 }

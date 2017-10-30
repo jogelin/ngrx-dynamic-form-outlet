@@ -1,5 +1,5 @@
-import { NgRxAction } from '../../store/ngrx-action';
-import { Consultation } from '../model/consultation';
+import { Consultation } from '../models/consultation.model';
+import { NgRxAction } from '../../../store/ngrx-action';
 
 export enum ConsultationActions {
   ADD_CONSULTATION = '[Consultation] ADD Consultation',

@@ -17,5 +17,5 @@ import { SideNavComponent } from './side-nav.component';
     SideNavComponent
   ]
 })
-export class SideNavModule {
+export class AppSideNavModule {
 }

@@ -6,7 +6,7 @@ import { ConsultationStoreService } from './consultation-store.service';
 import { ConsultationEffects } from './consultation.effects';
 import { reducer } from './consultation.reducer';
 
-// import ConsultationStoreModule in the ConsultationModule
+// import ConsultationStoreModule in the AppConsultationModule
 @NgModule({
   imports: [
     StoreModule.forFeature('consultation', reducer),
