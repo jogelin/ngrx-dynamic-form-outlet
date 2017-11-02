@@ -1,14 +1,14 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import { LayoutModule } from './layout/layout.module';
+import { AppLayoutModule } from './layout/layout.module';
 import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   imports: [
     CommonModule,
     HttpClientModule,
-    LayoutModule
+    AppLayoutModule
   ],
   declarations: [],
   providers: [],

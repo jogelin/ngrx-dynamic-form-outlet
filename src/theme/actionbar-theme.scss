@@ -1,0 +1,17 @@
+@import '~@angular/material/theming';
+@import './variable';
+
+@mixin actionbar-theme($theme) {
+
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+
+  .action-bar {
+    position: fixed;
+    top: 64px;
+    right: 0;
+    left: 300px;
+    z-index: 999;
+  }
+}
+

@@ -3,22 +3,38 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-layout',
   template: `
-    <mat-sidenav-container>
-      <mat-sidenav mode="side" opened="true" class="mat-elevation-z3">
-        <mat-toolbar>
-          CER
-        </mat-toolbar>
-        <app-sidenav-list class="md-elevation-z5"></app-sidenav-list>
+    <mat-toolbar color="primary" class="topnav">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>CER</span>
+      <mat-icon>keyboard_arrow_right</mat-icon>
+      <span>Consultation</span>
+      <mat-icon>keyboard_arrow_right</mat-icon>
+      <span>On behalf of notary</span>
+      <span flex></span>
+      <button mat-raised-button color="accent">
+        <mat-icon>picture_as_pdf</mat-icon>
+        Certificat
+      </button>
+      <button mat-raised-button>
+        <mat-icon>settings_backup_restore</mat-icon>
+        Reset
+      </button>
+      <button mat-raised-button color="accent">
+        <mat-icon>save</mat-icon>
+        Save
+      </button>
+    </mat-toolbar>
+    <mat-sidenav-container fullscreen>
+      <mat-sidenav mode="side" opened="true" #sidenav>
+        <app-sidenav-list></app-sidenav-list>
       </mat-sidenav>
-      <div>
-        <mat-toolbar>Consultation > On behalf of notary</mat-toolbar>
-        <div class="main">
-          <router-outlet></router-outlet>
-        </div>
+      <div class="mat-content">
+        <router-outlet></router-outlet>
       </div>
     </mat-sidenav-container>
   `,
-  styleUrls: ['./layout.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LayoutComponent implements OnInit {

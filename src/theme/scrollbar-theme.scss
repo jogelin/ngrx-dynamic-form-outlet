@@ -1,0 +1,21 @@
+@import '~@angular/material/theming';
+@import './variable';
+
+@mixin scrollbar-theme($theme) {
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    background-color: $fednot-light-grey;
+  }
+
+  /*
+  &::-webkit-scrollbar-track {
+    background-color: $fednot-dark-grey;
+  }ghjhj
+  */
+
+  ::-webkit-scrollbar-thumb {
+    background-color: $fednot-dark-grey;
+  }
+}
+

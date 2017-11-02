@@ -1,0 +1,56 @@
+@import '~@angular/material/theming';
+@import './variable';
+
+@mixin sidenav-theme($theme) {
+
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+
+  .mat-sidenav-container {
+    top: 64px !important;
+    background-color: $fednot-light-grey;
+
+    .mat-sidenav {
+      background-color: $fednot-dark-grey;
+      width: 250px;
+
+      .mat-nav-list {
+        padding-top: 0;
+
+        .mat-list-text {
+          padding-left: 5px;
+          padding-right: 0;
+        }
+
+        .nav-item {
+          color: white;
+          .mat-list-icon {
+            color: white;
+          }
+        }
+
+        .nav-sub-item {
+          background-color: $fednot-light-grey;
+
+          .mat-line {
+            padding-right: 0;
+          }
+
+        }
+
+        .active {
+          .mat-icon {
+            color: mat-color($accent, 500);
+          }
+        }
+
+      }
+
+    }
+    .mat-content {
+      padding: 10px;
+    }
+
+  }
+}
+

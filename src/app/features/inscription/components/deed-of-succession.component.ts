@@ -3,9 +3,11 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 @Component({
   selector: 'app-deed-of-succession',
   template: `
-    <p>
-      deed-of-succession works!
-    </p>
+    <mat-card>
+      <mat-card-content>
+        
+      </mat-card-content>
+    </mat-card>
   `,
   styles: [],
   changeDetection: ChangeDetectionStrategy.OnPush

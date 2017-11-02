@@ -1,0 +1,24 @@
+@import '~@angular/material/theming';
+@import './variable';
+
+@mixin topnav-theme($theme) {
+
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+
+  .topnav.mat-toolbar {
+    @include mat-elevation(2);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+
+    .mat-raised-button {
+      margin-right: 5px;
+      background-color: mat-color($accent, 500);
+      color:white;
+    }
+  }
+}
+

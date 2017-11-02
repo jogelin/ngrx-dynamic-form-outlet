@@ -1,0 +1,109 @@
+@import '~@angular/material/theming';
+
+$fednot-blue-grey: #90b6cb;
+$fednot-blue: #006a94;
+$fednot-green: #8eb1b2;
+$fednot-light-grey: #f1f4f5;
+$fednot-dark-grey: #6e797a;
+
+$fednot-green-palette: (
+  50 : #f1f6f6,
+  100 : #dde8e8,
+  200 : #c7d8d9,
+  300 : #b0c8c9,
+  400 : #9fbdbe,
+  500 : #8eb1b2,
+  600 : #86aaab,
+  700 : #7ba1a2,
+  800 : #719899,
+  900 : #5f888a,
+  A100 : #f9ffff,
+  A200 : #c6fcff,
+  A400 : #93faff,
+  A700 : #7af9ff,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #000000,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+
+$fednot-blue-grey-palette: (
+  50 : #f2f6f9,
+  100 : #dee9ef,
+  200 : #c8dbe5,
+  300 : #b1ccdb,
+  400 : #a1c1d3,
+  500 : $fednot-blue-grey,
+  600 : #88afc6,
+  700 : #7da6be,
+  800 : #739eb8,
+  900 : #618eac,
+  A100 : #ffffff,
+  A200 : #e7f5ff,
+  A400 : #b4e1ff,
+  A700 : #9bd7ff,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: $black-87-opacity,
+    A400: $black-87-opacity,
+    A700: white,
+  )
+);
+
+$fednot-blue-palette: (
+  50 : #e0edf2,
+  100 : #b3d2df,
+  200 : #80b5ca,
+  300 : #4d97b4,
+  400 : #2680a4,
+  500 : $fednot-blue,
+  600 : #00628c,
+  700 : #005781,
+  800 : #004d77,
+  900 : #003c65,
+  A100 : #95ccff,
+  A200 : #62b3ff,
+  A400 : #2f9bff,
+  A700 : #158eff,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: $white-87-opacity,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
+
+
+

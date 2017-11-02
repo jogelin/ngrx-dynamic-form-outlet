@@ -1,0 +1,25 @@
+@import '~@angular/material/theming';
+@import '~@covalent/core/theming/all-theme';
+@import './variable';
+
+@include mat-core();
+
+$primary: mat-palette($fednot-blue-grey-palette);
+$accent:  mat-palette($fednot-green-palette, A200, A100, A400);
+$warn: mat-palette($mat-red);
+$theme: mat-light-theme($primary, $accent, $warn);
+
+@include angular-material-theme($theme);
+@include covalent-theme($theme);
+
+@import './sidenav-theme';
+@include sidenav-theme($theme);
+
+@import './topnav-theme';
+@include topnav-theme($theme);
+
+@import './actionbar-theme';
+@include actionbar-theme($theme);
+
+@import './scrollbar-theme';
+@include scrollbar-theme($theme);

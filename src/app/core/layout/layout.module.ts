@@ -3,17 +3,25 @@ import { LayoutComponent } from './layout.component';
 import { RouterModule } from '@angular/router';
 import { MatButtonModule, MatIconModule, MatListModule, MatSidenavModule, MatToolbarModule } from '@angular/material';
 import { SidenavListComponent } from '../navigation/containers/sidenav-list.component';
-import { NavigationModule } from '../navigation/navigation.module';
+import { AppNavigationModule } from '../navigation/navigation.module';
+import { CovalentLayoutModule, CovalentMediaModule, CovalentStepsModule } from '@covalent/core';
+import { CommonModule } from '@angular/common';
 
 export const MAT_MODULES = [
+  CovalentLayoutModule,
+  CovalentStepsModule,
+  CovalentMediaModule,
   MatSidenavModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatButtonModule,
+  MatIconModule
 ];
 
 @NgModule({
   imports: [
+    CommonModule,
     RouterModule,
-    NavigationModule,
+    AppNavigationModule,
     ...MAT_MODULES
   ],
   declarations: [
@@ -21,5 +29,5 @@ export const MAT_MODULES = [
   ],
   exports: [LayoutComponent]
 })
-export class LayoutModule {
+export class AppLayoutModule {
 }

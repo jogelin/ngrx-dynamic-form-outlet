@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { NavigationStoreModule } from './store/navigation-store.module';
 import { SidenavListComponent } from './containers/sidenav-list.component';
-import { MatButtonModule, MatIconModule, MatListModule } from '@angular/material';
+import { MatButtonModule, MatExpansionModule, MatIconModule, MatListModule } from '@angular/material';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
@@ -10,6 +10,7 @@ export const MAT_MODULES = [
   MatListModule,
   MatIconModule,
   MatButtonModule,
+  MatExpansionModule
 ];
 
 @NgModule({
@@ -26,5 +27,5 @@ export const MAT_MODULES = [
     SidenavListComponent
   ]
 })
-export class NavigationModule {
+export class AppNavigationModule {
 }
